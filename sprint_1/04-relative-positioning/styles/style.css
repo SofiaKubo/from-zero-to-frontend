@@ -118,6 +118,7 @@
 
 .menu__item {
   position: fixed;
+  z-index: 1;
 }
 
 .menu__item_theme_landscape {
@@ -169,15 +170,23 @@
 нам предстоит прописать их в процессе прохождения этого курса */
 
 .menu__picture_theme_landscape {
+  top: 40px;
+  left: 40px;
 }
 
 .menu__picture_theme_portrait {
+  top: 40px;
+  right: 40px;
 }
 
 .menu__picture_theme_viewpoint {
+  bottom: 40px;
+  left: 40px;
 }
 
 .menu__picture_theme_expression {
+  right: 40px;
+  bottom: 40px;
 }
 
 .menu__item:hover .menu__picture {
@@ -219,8 +228,8 @@
 
 .content__image-name {
   position: absolute;
-  bottom: 10px;
   right: 10px;
+  bottom: 10px;
   font-size: 14px;
 }
 
