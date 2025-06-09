@@ -9,7 +9,7 @@
 .gallery {
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
+  grid-template-rows: auto;
   min-height: calc(100vh - 72px);
 }
 
@@ -45,7 +45,7 @@
 }
 
 .radio__span::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
