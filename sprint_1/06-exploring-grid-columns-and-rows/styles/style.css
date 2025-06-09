@@ -9,8 +9,8 @@
 .gallery {
   display: grid;
   gap: 20px;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   min-height: calc(100vh - 72px);
 }
 
