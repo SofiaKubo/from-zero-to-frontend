@@ -17,9 +17,9 @@
 
 .gallery {
   display: grid;
+  grid-template-columns: repeat(4, 1fr) 2fr 200px;
+  grid-template-rows: repeat(6, 1fr);
   gap: 10px;
-  grid-template-rows: repeat(6, auto);
-  grid-template-columns: repeat(5, auto) 200px;
   box-sizing: border-box;
   min-height: calc(100vh - 80px);
   padding: 0 60px 60px;
