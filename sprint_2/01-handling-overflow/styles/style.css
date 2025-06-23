@@ -170,6 +170,7 @@ body {
 
 .section__heading {
   margin-top: 0;
+  margin-bottom: 0;
   font-weight: 800;
   font-size: 31px;
   text-transform: uppercase;
@@ -177,7 +178,7 @@ body {
 
 .places__list {
   display: flex;
-  gap: 170px;
+  gap: 14%;
   margin-top: 25px;
   margin-bottom: 0;
   padding-left: 0;
@@ -315,7 +316,7 @@ body {
 }
 
 .stay__card {
-  height: 550px;
+  padding-bottom: 75%;
   box-shadow: 0 0 0 4px #00e6e6, 0 0 0 8px #0d0615, 0 0 0 12px #01cccc;
 }
 
