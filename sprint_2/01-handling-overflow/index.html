@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="color-scheme" content="only dark" />
+    <title>Добро пожаловать в Vёrstkaverse!</title>
+    <link
+      rel="stylesheet"
+      href="https://code.s3.yandex.net/web-code/fonts/fonts.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__wrapper">
+        <img class="logo" src="./images/logo.svg" alt="лого Вёрсткавёрс" />
+
+        <button
+          class="menu-button menu-button_type_open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <span class="visually-hidden">Показать меню</span>
+        </button>
+
+        <nav class="menu" id="menu">
+          <button class="menu-button menu-button_type_close" type="button">
+            <span class="visually-hidden">Скрыть меню</span>
+          </button>
+
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__link" href="#">Куда зайти</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__link" href="#">Где остановиться</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="hero">
+        <h1 class="hero__title">Добро пожаловать в&nbsp;Vёrstkaverse!</h1>
+      </section>
+
+      <section class="section places">
+        <div class="wrapper">
+          <h2 class="section__heading">Куда зайти в первую очередь</h2>
+
+          <ul class="places__list">
+            <li class="places__item">
+              <article class="card place-card">
+                <img
+                  class="card__image"
+                  src="./images/cinema.jpg"
+                  alt="Кинотеатр «Пиксель артхаус»"
+                />
+                <div class="card__info">
+                  <h3 class="card__title">Кинотеатр «Пиксель артхаус»</h3>
+                  <div class="card__text">
+                    <p>
+                      Старый кинотеатр, в котором вы сможете посмотреть лучшие
+                      работы Стенли Пиксика и братьев CSS.
+                    </p>
+                  </div>
+                  <a class="button card__link" href="#">Летс гоу!</a>
+                </div>
+              </article>
+            </li>
+            <li class="places__item">
+              <article class="card place-card">
+                <img
+                  class="card__image"
+                  src="./images/bar.jpg"
+                  alt="Кофейня «У Ё Моё»"
+                />
+                <div class="card__info">
+                  <h3 class="card__title">Кофейня «У&nbsp;Ё&nbsp;Моё»</h3>
+                  <div class="card__text">
+                    <p>
+                      Здесь, кроме авторских напитков и десертов от шеф-повара
+                      Вау Каквкусновича, вы сможете увидеть легендарных жителей
+                      Vёrstkaverse.
+                    </p>
+                    <p>
+                      За барной стойкой часто после тяжёлого рабочего дня
+                      отдыхает Йопрст, а из кухни иногда выглядывает сама Ё Моё!
+                    </p>
+                    <p>
+                      Улавливать такие моменты рекомендуем за чашкой фильтр-кофе
+                      и лучшим в мире баскским чизкейком под кодовым названием
+                      «ММММММ».
+                    </p>
+                  </div>
+                  <a class="button card__link" href="#">Летс гоу!</a>
+                </div>
+              </article>
+            </li>
+            <li class="places__item">
+              <article class="card place-card">
+                <img
+                  class="card__image"
+                  src="./images/arcade.jpg"
+                  alt="Мастерская «Верстак»"
+                />
+                <div class="card__info">
+                  <h3 class="card__title">Мастерская «Верстак»</h3>
+                  <div class="card__text">
+                    <p>
+                      Арт-пространство, где вы сможете проявить себя, как
+                      художник. Или посмотреть на работы других художников.
+                      Никаких NFT, только резьба по дереву, макраме и лепка на
+                      гончарном кругу.
+                    </p>
+                  </div>
+                  <a class="button card__link" href="#">Летс гоу!</a>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section stay">
+        <div class="wrapper">
+          <h2 class="section__heading">Остановиться и осмотреться</h2>
+
+          <ul class="stay__list">
+            <li class="stay__item">
+              <article class="card stay__card">
+                <div class="card__info">
+                  <h3 class="card__title">Отель «Призрачная свобода»</h3>
+                  <div class="card__text">
+                    <p>
+                      Если вам нужно отдохнуть после тяжёлой недели, этот отель
+                      — то, что вам нужно. Сами посудите: зал с аркадными
+                      автоматами, в том числе легендарным «Донки Конгом»,
+                      огромный киберспортивный зал в несколько этажей с ареной
+                      для матчей и шикарные капсульные номера.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="stay__item">
+              <article class="card stay__card">
+                <div class="card__info">
+                  <h3 class="card__title">Тёмная башня</h3>
+                  <div class="card__text">
+                    <p>
+                      Самая высокая точка Vёrstkaverse. Ходят легенды, что эта
+                      башня соединяет мир вёрстки с реальным миром. Доступ в неё
+                      открывается после прохождения этого курса.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <p class="footer__text">
+          Сайт разработан совместно с дизайн-студией Йопрст
+        </p>
+      </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
