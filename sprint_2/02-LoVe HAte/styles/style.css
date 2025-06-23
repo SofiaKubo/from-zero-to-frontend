@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-width: 360px;
+  height: inherit;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  max-width: 500px;
+  border: 1px solid #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card__title {
+  padding: 20px;
+  font-weight: 800;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__description {
+  padding: 20px;
+}
+
+.card__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card__link {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #6dc1fd;
+}
+
+.card__illustration {
+  display: none;
+  height: 30px;
+  animation: shake 0.5s infinite alternate;
+}
+
+.card__link:visited {
+  color: white;
+}
+
+.card__link:hover {
+  background-color: #ff00ff;
+}
+
+.card__link:active {
+  text-decoration: underline;
+}
+
+.card:hover .card__illustration {
+  display: block;
+}
