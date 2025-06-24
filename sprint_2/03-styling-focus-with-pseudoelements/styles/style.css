@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: start;
+  min-width: 360px;
+  height: inherit;
+  margin: 0;
+  padding: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 2px dotted #fd24af;
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 90%;
+  max-width: 768px;
+}
+
+.dialog iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card:focus-within {
+  background-color: #aed5f1;
+}
+
+.card:focus-within .button {
+  background-color: #ffc802;
+  color: #000;
+}
+
+.card__image-container {
+  flex-grow: 1;
+  flex-basis: 300px;
+}
+
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+}
+
+.card__description {
+  flex-grow: 1;
+  flex-basis: 300px;
+}
+
+.card__title {
+  margin-bottom: 40px;
+  font-weight: 800;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.card__list {
+  margin: 20px 0;
+  padding-left: 20px;
+  list-style: square;
+}
+
+.card__link {
+  color: inherit;
+}
+
+.card__link:focus {
+  outline: none;
+}
+
+.card__link:focus-visible {
+  outline: 2px dotted #fd24af;
+}
