@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>псевдокласс :has()</title>
+    <link
+      rel="stylesheet"
+      href="https://code.s3.yandex.net/web-code/fonts/fonts.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <article class="card">
+      <div class="card__image-container">
+        <img
+          src="./assets/images/hocus-pocus.jpeg"
+          alt="Четыре молодых человека стоят рядом лицом к камере. Сверху надпись 'Focus — Hocus Pocus'"
+          class="card__image"
+        />
+        <button type="button" class="button card__video-button">
+          Смотреть видео
+        </button>
+      </div>
+      <div class="card__description">
+        <h2 class="card__title">Focus — Hocus Pocus</h2>
+        <p class="card__text">
+          "Hocus Pocus" — песня голландской рок-группы Focus, написанная
+          клавишником, флейтистом и вокалистом Тейсом ван Леером и гитаристом
+          Яном Аккерманом. Композиция была записана и выпущена в 1971 году как
+          вступительный трек их второго студийного альбома Moving Waves.
+        </p>
+        <ul class="card__list">
+          <li class="card__list-item">
+            <a
+              class="card__link"
+              href="https://focustheband.co.uk/about-the-band"
+              target="_blank"
+              >Сайт группы Focus</a
+            >
+          </li>
+          <li class="card__list-item">
+            <a
+              class="card__link"
+              href="https://www.youtube.com/focus%20the%20band"
+              target="_blank"
+              >Канал на Youtube</a
+            >
+          </li>
+          <li class="card__list-item">
+            <a
+              class="card__link"
+              href="https://ru.wikipedia.org/wiki/Focus_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)"
+              target="_blank"
+              >Статья в Википедии</a
+            >
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__image-container">
+        <img
+          src="./assets/images/joe.jpeg"
+          alt="Фото Джо Кокера во время выступления на фестивале Вудсток"
+          class="card__image"
+        />
+        <button type="button" class="button card__video-button">
+          Смотреть видео
+        </button>
+      </div>
+      <div class="card__description">
+        <h2 class="card__title">With a little help from my&nbsp;friends</h2>
+        <p class="card__text">
+          Умопомрачительное выступление Джо Кокера на фестивале Woodstock в 1969
+          году, и возможно одно из самых эмоциональных исполнений хита The
+          Beatles.
+        </p>
+        <ul class="card__list">
+          <li class="card__list-item">
+            <a
+              class="card__link"
+              href="http://www.woodstockstory.com/joecocker.html"
+              target="_blank"
+              >woodstockstory.com</a
+            >
+          </li>
+          <li class="card__list-item">
+            <a
+              class="card__link"
+              href="https://woodstock.fandom.com/wiki/Joe_Cocker"
+              target="_blank"
+              >Woodstock Wiki</a
+            >
+          </li>
+          <li class="card__list-item">
+            <a
+              class="card__link"
+              href="https://www.woodstock.com/?s=joe+cocker"
+              target="_blank"
+              >Woodstock.com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </article>
+    <dialog class="dialog" id="video-dialog">
+      <iframe
+        src="https://www.youtube.com/embed/g4ouPGGLI6Q?enablejsapi=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <button class="button dialog__close" type="button">Закрыть окно</button>
+    </dialog>
+    <script src="./scripts/dialog.js"></script>
+  </body>
+</html>
