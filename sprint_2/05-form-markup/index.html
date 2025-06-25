@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://code.s3.yandex.net/web-code/normalize.css"
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="page">
@@ -26,41 +26,182 @@
               <fieldset
                 class="form__input-container form__input-container_ctrl_texts"
               >
-                <input type="text" class="form__item form__item_el_heading" />
+                <label for="heading" class="form__label">Заголовок</label>
+                <input
+                  type="text"
+                  class="form__item form__item_el_heading"
+                  id="heading"
+                  name="heading"
+                />
+                <label for="subheading" class="form__label">Подзаголовок</label>
                 <input
                   type="text"
                   class="form__item form__item_el_subheading"
+                  id="subheading"
+                  name="subheading"
                 />
-                <input type="email" class="form__item form__item_el_email" />
+                <label for="main-text" class="form__label">Текст статьи</label>
+                <textarea
+                  class="form__item form__item_el_main-text"
+                  id="main-text"
+                  name="main-text"
+                ></textarea>
+                <label for="email" class="form__label">E-mail</label>
+                <input
+                  type="email"
+                  class="form__item form__item_el_email"
+                  id="email"
+                  name="email"
+                />
               </fieldset>
               <div class="form__line"></div>
               <fieldset
                 class="form__input-container form__input-container_ctrl_visual"
               >
+                <label for="font-family" class="form__label"
+                  >Семейство шрифтов</label
+                >
+                <select
+                  class="form__item form__item_el_font-family"
+                  id="font-family"
+                  name="font-family"
+                >
+                  <option value="ibm">IBM Plex Serif</option>
+                  <option value="ubuntu">Ubuntu</option>
+                  <option value="istok">Istok Web</option>
+                </select>
+                <label for="heading-font-size" class="form__label"
+                  >Размер текста заголовка</label
+                >
                 <input
                   type="number"
                   class="form__item form__item_el_heading-fontsize"
+                  min="24"
+                  max="80"
+                  id="heading-font-size"
+                  name="heading-font-size"
+                  value="32"
                 />
+                <label for="text-font-size" class="form__label"
+                  >Размер текста абзаца</label
+                >
                 <input
                   type="number"
                   class="form__item form__item_el_text-fontsize"
+                  min="12"
+                  max="40"
+                  id="text-font-size"
+                  name="text-font-size"
+                  value="24"
                 />
-                <input type="date" class="form__item form__item_el_pubdate" />
+                <label for="pub-date" class="form__label"
+                  >Дата создания статьи</label
+                >
+                <input
+                  type="date"
+                  class="form__item form__item_el_pubdate"
+                  id="pub-date"
+                  name="pub-date"
+                />
+                <label for="image" class="form__label">Обложка статьи</label>
+                <select
+                  class="form__item form__item_el_image"
+                  id="image"
+                  name="image"
+                >
+                  <option value="bombardier">Bombardier CS300</option>
+                  <option value="hobbit">Боинг-777 Хоббит</option>
+                  <option value="tiger">Тигролёт</option>
+                  <option value="connected">
+                    Connected to 01000010 01001100 01010101 01000101
+                  </option>
+                </select>
               </fieldset>
               <fieldset
                 class="form__input-container form__input-container_ctrl_additional"
               >
+                <h3 class="form__heading form__heading_type_ctrl-el-heading">
+                  Количество колонок
+                </h3>
+                <input
+                  type="radio"
+                  name="number-of-columns"
+                  id="one-column"
+                  class="form__item form__item_el_number-of-columns"
+                  value="one-column"
+                  checked
+                />
+                <label
+                  for="one-column"
+                  class="form__label form__label_direction_right"
+                  >1</label
+                >
+                <input
+                  type="radio"
+                  name="number-of-columns"
+                  id="two-columns"
+                  class="form__item form__item_el_number-of-columns"
+                  value="two-columns"
+                />
+                <label
+                  for="two-columns"
+                  class="form__label form__label_direction_right"
+                  >2</label
+                >
+                <label for="text-color" class="form__label">Цвет текста</label>
                 <input
                   type="color"
                   class="form__item form__item_el_text-color"
+                  id="text-color"
+                  name="text-color"
+                  value="#979797"
                 />
+                <label for="content-width" class="form__label"
+                  >Ширина контента</label
+                >
                 <input
                   type="range"
                   class="form__item form__item_el_content-width"
+                  min="30"
+                  max="80"
+                  step="10"
+                  id="content-width"
+                  name="content-width"
                 />
+                <h3 class="form__heading form__heading_type_ctrl-el-heading">
+                  Дополнительные параметры
+                </h3>
+                <input
+                  type="checkbox"
+                  name="extra-option"
+                  id="black-background"
+                  class="form__item form__item_el_extra-options"
+                  value="black-background"
+                />
+                <label
+                  for="black-background"
+                  class="form__label form__label_direction_right"
+                  >Чёрный фон</label
+                >
+                <input
+                  type="checkbox"
+                  name="extra-option"
+                  id="bold-heading"
+                  class="form__item form__item_el_extra-options"
+                  value="bold-heading"
+                  checked
+                />
+                <label
+                  for="bold-heading"
+                  class="form__label form__label_direction_right"
+                  >Жирный заголовок</label
+                >
               </fieldset>
             </div>
-            <fieldset class="form__handlers"></fieldset>
+            <fieldset class="form__handlers">
+              <input type="submit" class="form__button" />
+              <input type="reset" class="form__button" />
+            </fieldset>
           </form>
         </div>
       </section>
