@@ -1,0 +1,20 @@
+/* Шрифты, их размеры, начертания, стиль и отступы */
+:root {
+  --main-font: "PT Sans";
+  --main-text-size: 18px;
+  --h1-size: 45px;
+  --h2-size: 38px;
+  --h3-size: 31px;
+  --h4-size: 25px;
+  --h5-size: 22px;
+  --h6-size: 20px;
+  --h1-margin: 30px;
+  --h2-margin: 31px;
+  --h3-margin: 31px;
+  --h4-margin: 33px;
+  --h5-margin: 36px;
+  --h6-margin: 46px;
+  --cursive-font-style: italic;
+  --bold-font-weight: 800;
+  --headings-text-transform: uppercase;
+}
