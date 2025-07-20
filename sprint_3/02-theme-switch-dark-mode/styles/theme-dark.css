@@ -1,0 +1,9 @@
+/* Переопределите переменные для тёмной темы */
+
+:root.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #fff;
+  --article-bg-color: #5f0dee;
+  --author-bg-color: #fff;
+  --author-text-color: #1e1e1e;
+}
