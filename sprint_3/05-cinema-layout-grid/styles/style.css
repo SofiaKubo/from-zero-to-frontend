@@ -10,16 +10,16 @@ html {
     "header header header"
     "navigation main main"
     "footer footer footer";
-  min-block-size: 100%;
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
+  min-block-size: 100%;
 }
 
 .content {
   display: grid;
-  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
   grid-area: main;
   gap: 1.7em;
   padding: 0 1em 6em 0;
