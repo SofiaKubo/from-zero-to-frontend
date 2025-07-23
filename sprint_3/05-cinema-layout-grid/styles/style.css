@@ -19,7 +19,7 @@ html {
 
 .content {
   display: grid;
-  grid-template-columns: repeat(2, min-content);
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
   grid-area: main;
   gap: 1.7em;
   padding: 0 1em 6em 0;
