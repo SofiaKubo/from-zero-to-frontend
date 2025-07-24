@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: var(--main-font-family), sans-serif;
+  font-size: var(--main-text-size, 18px);
+  background-color: var(--white);
+  background-image: var(--bg-pattern);
+  min-block-size: 100dvb;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: var(--white, #fff);
+  font-weight: 800;
+  font-size: var(--h1-font-size, 45px);
+  text-transform: uppercase;
+  background-color: rgb(0 0 0 / 0.8);
+}
+
+h2 {
+  font-weight: 800;
+  font-size: var(--h2-font-size, 38px);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: var(--h3-font-size, 31px);
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  inline-size: 90%;
+}
+
+.input-component_type_textarea {
+  grid-column: span 2;
+}
+
+.form-submit-button {
+  align-self: end;
+  inline-size: 100%;
+}
+
+.form-message {
+  position: absolute;
+  inset: 20px 5% auto auto;
+  padding: 1em;
+  background-color: var(--yellow);
+  inline-size: 30%;
+}
+
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input-component_type_textarea {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .input-component_type_textarea textarea {
+    block-size: calc(100% - 1em);
+  }
+
+  .form-submit-button {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .form-message {
+    inline-size: 45%;
+  }
+}

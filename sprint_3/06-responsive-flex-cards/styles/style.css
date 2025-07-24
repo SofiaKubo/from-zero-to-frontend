@@ -5,14 +5,14 @@
 }
 
 body {
-  min-inline-size: 450px;
-  min-block-size: 100dvb;
   margin: 0;
   padding: 2em;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   background-color: #fff;
   background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+  min-inline-size: 450px;
+  min-block-size: 100dvb;
 }
 
 h1,
@@ -23,33 +23,33 @@ ul {
 }
 
 .cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
   padding: 0;
   list-style: none;
-  display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  min-block-size: 100%;
   border: 1px solid #000;
   background-color: #fff;
+  min-block-size: 100%;
 }
 
 .cards-list__item {
-  flex-basis: 300px;
   flex-grow: 1;
+  flex-basis: 300px;
 }
 
 .card__image {
   flex-grow: 1;
   flex-basis: 250px;
-  inline-size: 250px;
   object-fit: cover;
   object-position: center;
+  inline-size: 250px;
   aspect-ratio: 1 / 1;
 }
 
