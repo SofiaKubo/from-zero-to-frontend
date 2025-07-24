@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-inline-size: 450px;
+  min-block-size: 100dvb;
+  margin: 0;
+  padding: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background-color: #fff;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+}
+
+.cards-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  min-block-size: 100%;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.cards-list__item {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.card__image {
+  flex-grow: 1;
+  flex-basis: 250px;
+  inline-size: 250px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1 / 1;
+}
+
+.card__description {
+  flex-grow: 3;
+  flex-basis: 300px;
+  padding: 1.5em;
+}
+
+.card__title {
+  margin-block-end: 0.2em;
+  font-size: 2em;
+  text-transform: uppercase;
+  hyphens: auto;
+}
