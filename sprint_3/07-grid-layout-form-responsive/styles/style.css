@@ -90,7 +90,7 @@ h3 {
   inline-size: 30%;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .form {
     grid-template-columns: 1fr 1fr;
   }
@@ -110,5 +110,24 @@ h3 {
   }
   .form-message {
     inline-size: 45%;
+  }
+}
+
+@media (width <= 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .input-component_type_textarea {
+    grid-column: initial;
+    grid-row: initial;
+  }
+
+  .form-submit-button {
+    grid-column: initial;
+  }
+
+  .form-message {
+    inline-size: 90%;
   }
 }
