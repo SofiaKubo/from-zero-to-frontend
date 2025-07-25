@@ -41,6 +41,7 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1em;
   container-type: inline-size;
+  container-name: cards-list;
 }
 
 .recommendations {
@@ -54,6 +55,7 @@ ul {
   padding: 0.5em;
   overflow-x: scroll;
   container-type: inline-size;
+  container-name: cards-list;
 }
 
 .title {
@@ -66,6 +68,8 @@ ul {
   border: 1px solid #000;
   background-color: #fff;
   min-inline-size: 350px;
+  container-name: card;
+  container-type: inline-size;
 }
 
 .card__image {
@@ -98,5 +102,15 @@ ul {
   .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@container card (inline-size <= 400px) {
+  .button {
+    font-size: clamp(0.8em, 3cqi, 2em);
+  }
+
+  .card__description {
+    padding: clamp(0.6em, 0.8cqi, 1em);
   }
 }
