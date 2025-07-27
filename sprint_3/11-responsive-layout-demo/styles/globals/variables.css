@@ -1,5 +1,5 @@
 :root {
-  --main-font: 'PT Sans';
+  --main-font: "PT Sans";
   --menu-toggle-size: 40px;
   --section-padding: 20px 10px;
   --main-font-size: 18px;
@@ -14,4 +14,11 @@
   --text-container-text-color: #000;
   --icons-list-link-hover-background-color: #80d994;
   --internal-padding: 40px 20px;
+}
+
+@media (width >= 600px) {
+  :root {
+    --section-padding: 40px 20px;
+    --internal-padding: 40px;
+  }
 }
