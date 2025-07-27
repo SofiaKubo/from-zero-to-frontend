@@ -1,0 +1,41 @@
+.header {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  padding: var(--section-padding, 20px 40px);
+}
+
+.text-content {
+  padding: var(--section-padding, 20px 40px);
+}
+
+.icons {
+  padding: var(--section-padding, 20px 40px);
+}
+
+.icons__text-wrapper {
+  margin-block-end: 1em;
+}
+
+@media (width >= 1000px) {
+  .hero-and-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .icons__text-wrapper {
+    margin-block-end: 0;
+  }
+}
+
+@media (width >= 1400px) {
+  .icons {
+    grid-template-columns: 2fr 1fr;
+  }
+}
