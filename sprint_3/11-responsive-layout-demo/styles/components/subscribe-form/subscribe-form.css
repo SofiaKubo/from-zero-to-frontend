@@ -2,22 +2,22 @@
   display: grid;
   align-content: center;
   gap: 10px;
-  inline-size: 100%;
   padding: var(--internal-padding, 40px 20px);
   color: var(--subscribe-form-color, #000);
   background-color: var(--subscribe-form-background-color, #feafe8);
+  inline-size: 100%;
+  container-type: inline-size;
 }
 
 .subscribe-form__title {
-  max-inline-size: 800px;
   margin-block-end: 0.2em;
   font-weight: bold;
   font-size: 31px;
   text-transform: uppercase;
+  max-inline-size: 800px;
 }
 
 .subscribe-form__input {
-  inline-size: 100%;
   border: 2px solid currentColor;
   padding: 0.5em 1em;
   font-family: inherit;
@@ -25,6 +25,7 @@
   font-size: inherit;
   text-transform: uppercase;
   background-color: transparent;
+  inline-size: 100%;
 }
 
 .subscribe-form__button {
@@ -47,4 +48,19 @@
 .subscribe-form__agreement-text {
   font-size: 0.8em;
   text-align: center;
+}
+
+@container (width >= 500px) {
+  .subscribe-form__title {
+    grid-column: 1 / 3;
+  }
+  .subscribe-form__label {
+    grid-column: 1;
+  }
+  .subscribe-form__button {
+    grid-column: 2;
+  }
+  .subscribe-form__agreement-text {
+    grid-column: 1 / 3;
+  }
 }
