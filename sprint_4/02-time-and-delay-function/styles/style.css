@@ -65,9 +65,11 @@ body {
 }
 
 .yo_type_green {
+  transition-timing-function: linear;
   transform: translateX(-70%);
 }
 
 .yo_type_pink {
+  transition-timing-function: ease-in;
   transform: translateX(-30%);
 }
