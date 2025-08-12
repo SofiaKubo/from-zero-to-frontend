@@ -117,13 +117,16 @@ body {
 
 @keyframes moon {
   to {
+    transform: rotate(360deg);
   }
 }
 
 .content:has(.content__button:is(:hover, :focus-visible))
   :is(.scene__image_type_first-plan) {
+  transform: scale(1.05);
 }
 
 .content:has(.content__button:is(:hover, :focus-visible))
   :is(.scene__image_type_second-plan) {
+  transform: scale(0.95);
 }
