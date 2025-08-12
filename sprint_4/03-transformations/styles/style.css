@@ -89,6 +89,7 @@ body {
   background-color: #fff;
   transition-duration: 0.7s;
   transition-property: inset-block-start, inset-inline-start, transform;
+  transform: skewX(30deg);
   inline-size: calc(50% + 1px);
   block-size: 100%;
 }
