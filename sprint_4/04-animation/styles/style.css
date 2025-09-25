@@ -8,11 +8,25 @@
   }
 }
 
+@keyframes countdown {
+  0% {
+    content: "3";
+  }
+
+  50% {
+    content: "2";
+  }
+
+  100% {
+    content: "1";
+  }
+}
+
 html,
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -25,8 +39,8 @@ body {
 }
 
 .cards {
-  background-color: #000;
   color: #fff;
+  background-color: #000;
 }
 
 .cards__wrapper {
@@ -37,16 +51,16 @@ body {
 
 .title {
   margin: 0;
-  line-height: 56px;
   font-size: 54px;
+  line-height: 56px;
 }
 
 .subtitle {
-  line-height: 19px;
-  font-size: 14px;
+  max-width: 350px;
   margin-top: 35px;
   margin-bottom: 55px;
-  max-width: 350px;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .demo {
@@ -56,15 +70,15 @@ body {
 }
 
 .demo__item {
-  background-color: #202020;
+  position: relative;
   width: 240px;
   height: 240px;
-  margin-right: 10px;
   margin-top: 10px;
-  position: relative;
+  margin-right: 10px;
   border-radius: 4px;
-  background-size: cover;
   overflow: hidden;
+  background-color: #202020;
+  background-size: cover;
 }
 
 .demo__item:nth-of-type(2n) {
@@ -77,24 +91,24 @@ body {
 }
 
 .demo__item-title {
-  width: 158px;
   position: absolute;
   bottom: 15px;
   left: 15px;
+  width: 158px;
   margin: 0;
-  line-height: 30px;
-  font-size: 30px;
   font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .demo__item-subtitle {
+  width: 158px;
+  margin-top: 24px;
+  margin-left: 16px;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-top: 24px;
-  margin-left: 16px;
-  width: 158px;
 }
 
 .demo__item-subtitle_character_cousteau {
@@ -111,8 +125,8 @@ body {
 }
 
 .demo__wrapper {
-  height: 100%;
   width: 100%;
+  height: 100%;
   background-size: cover;
 }
 
