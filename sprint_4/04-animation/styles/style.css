@@ -171,3 +171,7 @@ body {
   right: 15px;
   font-size: 72px;
 }
+
+.demo__item:hover .demo__item-subtitle_character_baumgartner::after {
+  animation: countdown 2s linear 1 forwards;
+}
