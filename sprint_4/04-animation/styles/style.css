@@ -104,6 +104,10 @@ body {
   background-image: url(https://pictures.s3.yandex.net/animation_topic/kusto.png);
 }
 
+.demo__item:hover .demo__wrapper_character_cousteau {
+  transform: scale(1.05);
+}
+
 .demo__item_character_rossie {
   background-image: url(https://pictures.s3.yandex.net/animation_topic/rossie.png);
 }
