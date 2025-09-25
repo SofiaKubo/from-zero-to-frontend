@@ -93,6 +93,11 @@ body {
   left: 16px;
   margin: 0;
   opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.demo__item:hover .demo__item-subtitle_character_cousteau {
+  opacity: 1;
 }
 
 .demo__wrapper {
