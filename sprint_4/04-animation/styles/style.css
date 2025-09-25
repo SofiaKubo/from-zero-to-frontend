@@ -114,6 +114,11 @@ body {
 
 .demo__item_character_starman {
   background-image: url(https://pictures.s3.yandex.net/animation_topic/starman.png);
+  transition: box-shadow 0.3s ease;
+}
+
+.demo__item_character_starman:hover {
+  box-shadow: 0 0 20px #4e52b0;
 }
 
 .demo__item-ico {
