@@ -54,6 +54,7 @@ body {
   position: relative;
   border-radius: 4px;
   background-size: cover;
+  overflow: hidden;
 }
 
 .demo__item:nth-of-type(2n) {
@@ -102,6 +103,7 @@ body {
 
 .demo__wrapper_character_cousteau {
   background-image: url(https://pictures.s3.yandex.net/animation_topic/kusto.png);
+  transition: transform 0.9s ease-in-out;
 }
 
 .demo__item:hover .demo__wrapper_character_cousteau {
