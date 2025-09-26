@@ -29,7 +29,7 @@ body {
 
 .helicopter {
   position: relative;
-  transform: translate3d(-200px, -100px, 0);
+  transform: translate3d(-200px, -100px, 0px) rotateZ(-10deg);
 }
 
 .cockpit {
