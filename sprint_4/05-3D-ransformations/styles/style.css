@@ -140,6 +140,6 @@ body {
 
 @media (width <= 786px) {
   .helicopter {
-    transform: translate3d(-100px, 0, 0);
+    transform: translate3d(-100px, 0px, 0px) scale(0.5);
   }
 }
