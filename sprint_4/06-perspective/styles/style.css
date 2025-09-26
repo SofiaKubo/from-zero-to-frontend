@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+.container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  max-height: 100vh;
+  margin: 0;
+  background-color: #fff;
+  block-size: 100%;
+}
+
+.figure {
+  position: absolute;
+  top: 25%;
+  z-index: 2;
+  inline-size: 100px;
+}
+
+.deck {
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  border: 1.8rem solid #f9d398;
+  outline: 1px solid #000;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #fff,
+    #fff 12.5%,
+    #000 12.5%,
+    #000 25%
+  );
+  transform: rotateX(40deg);
+  inline-size: 50vmin;
+  block-size: 50vmin;
+}
+
+.deck__inner {
+  border: 1px solid #000;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #000,
+    #000 12.5%,
+    #fff 12.5%,
+    #fff 25%
+  );
+  inline-size: 100%;
+  block-size: 100%;
+  mix-blend-mode: difference;
+}
+
+@media (width <= 640px) {
+  .figure {
+    top: 30%;
+    inline-size: 80px;
+  }
+
+  .deck {
+    border: 1rem solid #f9d398;
+    inline-size: 70vmin;
+    block-size: 70vmin;
+  }
+}
