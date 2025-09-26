@@ -15,6 +15,7 @@ html {
   max-height: 100vh;
   margin: 0;
   background-color: #fff;
+  perspective: 400px;
   block-size: 100%;
 }
 
