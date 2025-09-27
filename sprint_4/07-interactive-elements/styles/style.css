@@ -38,7 +38,12 @@ summary::-webkit-details-marker {
 }
 
 summary svg {
+  transition: transform 0.3s ease-in-out;
   max-inline-size: 30px;
+}
+
+details[open] summary svg {
+  transform: scale(-100%);
 }
 
 .content {
