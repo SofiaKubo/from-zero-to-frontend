@@ -20,6 +20,11 @@ ul {
   list-style: none;
 }
 
+body:has(details.css[open]) article.css {
+  order: -1;
+  box-shadow: 8px 8px 0 #fd24af;
+}
+
 summary {
   display: flex;
   justify-content: space-between;
@@ -96,6 +101,21 @@ details[open] summary svg {
   margin: 0 0 1em;
   font-size: 1.5em;
   text-transform: uppercase;
+}
+
+body:has(details.css[open]) article.css {
+  order: -1;
+  box-shadow: 8px 8px 0 #fd24af;
+}
+
+body:has(details.html[open]) article.html {
+  order: -1;
+  box-shadow: 8px 8px 0 #fd24af;
+}
+
+body:has(details.js[open]) article.js {
+  order: -1;
+  box-shadow: 8px 8px 0 #fd24af;
 }
 
 @media (width <= 768px) {
