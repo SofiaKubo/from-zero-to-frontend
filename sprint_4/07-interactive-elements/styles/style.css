@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background-color: #fff;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+  min-block-size: 100dvb;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+}
+
+.people {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  background-color: #6dc1fd;
+}
+
+.card__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+  max-inline-size: 200px;
+  aspect-ratio: 1 / 1;
+}
+
+.card__description {
+  padding: 1em;
+}
+
+.card__title {
+  margin: 0 0 1em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+@media (width <= 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card__image {
+    max-inline-size: 100%;
+  }
+}
