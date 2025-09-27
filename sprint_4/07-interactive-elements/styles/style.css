@@ -46,6 +46,20 @@ details[open] summary svg {
   transform: scale(-100%);
 }
 
+.details-description {
+  border-inline: 1px solid #000;
+  padding: 2em;
+  background-color: #fff;
+}
+
+.details-component:last-child .details-description {
+  border-block-end: 1px solid #000;
+}
+
+.details-description p {
+  margin: 0;
+}
+
 .content {
   display: grid;
   grid-template-columns: 1fr 2fr;
