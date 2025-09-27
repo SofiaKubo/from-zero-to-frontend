@@ -20,6 +20,27 @@ ul {
   list-style: none;
 }
 
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  list-style: none;
+  background-color: #80d994;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary svg {
+  max-inline-size: 30px;
+}
+
 .content {
   display: grid;
   grid-template-columns: 1fr 2fr;
