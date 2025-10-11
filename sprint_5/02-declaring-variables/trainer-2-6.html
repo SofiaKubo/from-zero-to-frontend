@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 4.1 Функции</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      function isLeapYear(year) {
+        const multipleOf100 = !(year % 100);
+        const multipleOf400 = !(year % 400);
+        const multipleOf4 = !(year % 4);
+
+        return (
+          (multipleOf100 && multipleOf400) || (!multipleOf100 && multipleOf4)
+        );
+      }
+
+      console.log(isLeapYear(1234) ? "Високосный" : "Невисокосный");
+      console.log(isLeapYear(2200) ? "Високосный" : "Невисокосный");
+      console.log(isLeapYear(2056) ? "Високосный" : "Невисокосный");
+    </script>
+  </body>
+</html>
