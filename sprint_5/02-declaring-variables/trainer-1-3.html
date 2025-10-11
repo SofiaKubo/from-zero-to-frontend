@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 2.1 Скалярные значения</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const PI = Math.PI;
+      const radius = 2;
+      const side = 2;
+
+      const circleArea = PI * radius ** 2;
+
+      const triangleHeight = (Math.sqrt(3) / 2) * side;
+      const triangleArea = (triangleHeight * side) / 2;
+
+      let result = "";
+
+      /* Здесь должен быть ваш код */
+
+      if (triangleArea > circleArea) {
+        result = `Площадь треугольника больше площади круга и равна ${triangleArea}`;
+      } else {
+        result = `Площадь круга больше площади треугольника и равна ${circleArea}`;
+      }
+      console.log(result);
+    </script>
+  </body>
+</html>
