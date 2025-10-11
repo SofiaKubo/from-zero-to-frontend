@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 2.2 Скалярные значения</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      /* Здесь должен быть ваш код */
+      const x = 1600;
+      const multipleOf400 = x % 400 === 0;
+      const multipleOf100 = x % 100 === 0;
+      const multipleOf4 = x % 4 === 0;
+
+      if (multipleOf4 && (!multipleOf100 || multipleOf400)) {
+        console.log("Високосный");
+      } else {
+        console.log("Невисокосный");
+      }
+    </script>
+  </body>
+</html>
