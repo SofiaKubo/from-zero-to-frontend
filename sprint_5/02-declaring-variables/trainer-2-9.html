@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Тренажёр 5.1 Области видимости: локальные и глобальные переменные
+    </title>
+  </head>
+
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const multiplier = Math.PI;
+
+      function calculateTriangleArea(a, b, c) {
+        const multiplier = (a + b + c) / 2;
+
+        const result = Math.sqrt(
+          multiplier * (multiplier - a) * (multiplier - b) * (multiplier - c)
+        );
+        return result;
+      }
+
+      function calculateCircleArea(radius) {
+        const result = multiplier * radius * radius;
+        return result;
+      }
+
+      const result = calculateTriangleArea(3, 4, 5) + calculateCircleArea(10);
+      console.log(`Результат: ${result}`);
+    </script>
+  </body>
+</html>
