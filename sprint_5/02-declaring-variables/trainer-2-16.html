@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 7.1 Массивы и коллекции</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const array = ["a", "b", "с", "d", "e", "f"];
+
+      let fromIndex = 1;
+      const countToDelete = 2;
+
+      /* Здесь должен быть ваш код */
+      for (let i = fromIndex; i < array.length - countToDelete; i++) {
+        array[i] = array[i + countToDelete];
+      }
+
+      for (let i = 0; i < countToDelete; i++) {
+        array.pop();
+      }
+
+      console.log(array);
+    </script>
+  </body>
+</html>
