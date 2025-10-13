@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Тренажёр 5.1 Области видимости: локальные и глобальные переменные
+    </title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      let result = 0;
+
+      function average(a, b) {
+        if (b <= a) {
+          return undefined;
+        }
+
+        const span = b - a;
+        let sumSquares = 0;
+
+        for (let i = a; i <= b; i++) {
+          const sq = i * i;
+          sumSquares += sq;
+        }
+
+        return sumSquares / span;
+      }
+
+      result += average(5, 50);
+      result += average(10, 80);
+
+      console.log(
+        result === 3433.1507936507937
+          ? `Отлично, расчеты верны`
+          : `Assertion failed: Результат ${result} не равен 3433.1507936507937`
+      );
+    </script>
+  </body>
+</html>
