@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 4.3 Функции</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      function calculateCircleArea(radius) {
+        const PI = Math.PI;
+
+        const circleArea = PI * radius * radius;
+        return circleArea;
+      }
+
+      function calculateTriangleArea(side) {
+        const triangleHeight = (Math.sqrt(3) * side) / 2;
+        const triangleArea = (triangleHeight * side) / 2;
+        return triangleArea;
+      }
+
+      function compareShapes(radius, side) {
+        const circleArea = calculateCircleArea(radius);
+        const triangleArea = calculateTriangleArea(side);
+        const diff = circleArea - triangleArea;
+
+        if (Math.abs(diff) <= Number.EPSILON) return 0;
+
+        return diff < 0 ? -1 : 1;
+      }
+
+      switch (compareShapes(2, 2)) {
+        case 0:
+          console.log("Треугольник и круг одинаковы");
+          break;
+        case -1:
+          console.log("Круг меньше треугольника");
+          break;
+        case 1:
+          console.log("Круг больше треугольника");
+          break;
+      }
+    </script>
+  </body>
+</html>
