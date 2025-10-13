@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 6.3 Сложные значения данных</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const director = {
+        name: "Валерий",
+        surname: "Коломиец",
+        patronymic: "Петрович",
+      };
+
+      const address = {
+        city: "Москва",
+        street: "Пушкинская",
+        home: 5,
+      };
+
+      const company = { director, address };
+
+      function fio(person) {
+        const shortFio = `${person.surname} ${person.name}`;
+        return person.patronymic
+          ? `${shortFio} ${person.patronymic}`
+          : shortFio;
+      }
+
+      function addressToString(address) {
+        return `Город ${address.city}, улица ${address.street}, дом ${address.home}`;
+      }
+
+      function companyDescription({ address, director }) {
+        const directorFio = fio(director);
+        const addressDescription = addressToString(address);
+        return `Директор: ${directorFio}\nАдрес: ${addressDescription}`;
+      }
+
+      console.log(companyDescription(company));
+    </script>
+  </body>
+</html>
