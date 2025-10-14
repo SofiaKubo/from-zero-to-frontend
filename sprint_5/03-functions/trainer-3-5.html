@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 4.3 Аргументы</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const user = {
+        name: "Василий",
+        surname: "Петров",
+        age: 25,
+      };
+
+      function makeFIO(user) {
+        user.fio = `${user.surname} ${user.name}`;
+        return user;
+      }
+
+      makeFIO(user);
+      console.log(user.fio);
+    </script>
+  </body>
+</html>
