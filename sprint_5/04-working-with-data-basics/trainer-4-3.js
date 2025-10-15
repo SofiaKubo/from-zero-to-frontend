@@ -67,3 +67,22 @@ let productsForAnimalHamster = filterProductsBy(products, {
   subcategory: 'Корм для хомячков',
 });
 console.log(productsForAnimalHamster);
+
+let hamsterProducts = filterProductsBy(products, {
+  animal: 'Хомячки',
+});
+console.log(hamsterProducts.length);
+
+function filterProductsBy(products, filter) {
+  return products
+    .filter((product) => !filter.category || product.category === filter.category)
+    .filter((product) => !filter.animal || product.animal === filter.animal)
+    .filter((product) => !filter.subcategory || product.subcategory === filter.subcategory)
+    .filter((product) => filter.inStock === undefined || product.inStock === filter.inStock);
+}
+
+let inStockHamsters = filterProductsBy(products, {
+  animal: 'Хомячки',
+  inStock: true,
+});
+console.log(inStockHamsters.length);
