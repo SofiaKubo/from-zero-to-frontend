@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 2.1 Поиск</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const commonSet = [33, 54, 46, 82, 77, 64];
+      const reference = [42, 54, 88, 82, 33, 64];
+      let value = 1;
+
+      /* Здесь должен быть ваш код */
+
+      function searchOfValue(arr1, arr2) {
+        arr2.forEach((item, index) => {
+          if (arr1.includes(item)) {
+            value *= 2;
+          } else {
+            value += 2;
+          }
+        });
+        return arr1.indexOf(value);
+      }
+
+      const index = searchOfValue(commonSet, reference);
+
+      console.log(index);
+    </script>
+  </body>
+</html>
