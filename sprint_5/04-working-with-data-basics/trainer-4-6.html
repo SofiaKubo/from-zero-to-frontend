@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 4.1 Сортировка</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const commonSet = [
+        { letter: 'C', num: 2 },
+        { letter: 'B', num: 0 },
+        { letter: 'C', num: 3 },
+        { letter: 'A', num: 1 },
+        { letter: 'C', num: 1 },
+      ];
+
+      /* Здесь должен быть ваш код */
+
+      let sortedSet = commonSet.toSorted((a, b) => {
+        if (a.letter < b.letter) {
+          return -1;
+        }
+        if (a.letter > b.letter) {
+          return 1;
+        }
+        return a.num - b.num;
+      });
+
+      console.log(sortedSet.reverse());
+    </script>
+  </body>
+</html>
