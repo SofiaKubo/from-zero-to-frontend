@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 3.1 Фильтрация</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const commonSet = [33, 54, 46, 82, 77, 64];
+
+      /* Здесь должен быть ваш код */
+      const hasEven = commonSet.filter((num) => num % 3 === 0).some((num) => num % 2 === 0);
+
+      console.log(hasEven);
+    </script>
+  </body>
+</html>
