@@ -19,7 +19,7 @@ html {
 }
 
 .page::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   z-index: 1;
@@ -46,7 +46,7 @@ html {
 }
 
 .page__title::after {
-  content: "*";
+  content: '*';
   position: relative;
 }
 
@@ -56,7 +56,7 @@ html {
 }
 
 .page__title:hover::before {
-  content: "На самом деле нет.\AВажнее &mdash; научиться ошибаться.";
+  content: 'На самом деле нет.\AВажнее &mdash; научиться ошибаться.';
   position: absolute;
   top: 180px;
   right: 20px;

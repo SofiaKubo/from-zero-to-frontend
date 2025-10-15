@@ -10,15 +10,15 @@
 
 @keyframes countdown {
   0% {
-    content: "3";
+    content: '3';
   }
 
   50% {
-    content: "2";
+    content: '2';
   }
 
   100% {
-    content: "1";
+    content: '1';
   }
 }
 
@@ -165,7 +165,7 @@ body {
 }
 
 .demo__item-subtitle_character_baumgartner::after {
-  content: "3";
+  content: '3';
   position: absolute;
   top: 35px;
   right: 15px;

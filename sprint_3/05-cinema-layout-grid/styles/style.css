@@ -7,11 +7,11 @@ html {
   grid-template-columns: min-content 3fr 3fr;
   grid-template-rows: 9em auto 9em;
   grid-template-areas:
-    "header header header"
-    "navigation main main"
-    "footer footer footer";
+    'header header header'
+    'navigation main main'
+    'footer footer footer';
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;
   min-block-size: 100%;
@@ -136,7 +136,9 @@ button:focus {
   color: #6dc1fd;
   font-size: 0.9em;
   text-decoration: none;
-  transition: color 0.2s, background-color 0.2s;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
 }
 
 .card__link:hover,

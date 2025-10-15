@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   background-color: #fff;
   min-block-size: 100dvb;

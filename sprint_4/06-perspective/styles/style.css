@@ -33,13 +33,7 @@ html {
   margin: auto;
   border: 1.8rem solid #f9d398;
   outline: 1px solid #000;
-  background-image: repeating-linear-gradient(
-    90deg,
-    #fff,
-    #fff 12.5%,
-    #000 12.5%,
-    #000 25%
-  );
+  background-image: repeating-linear-gradient(90deg, #fff, #fff 12.5%, #000 12.5%, #000 25%);
   transform: rotateX(40deg);
   inline-size: 50vmin;
   block-size: 50vmin;
@@ -47,13 +41,7 @@ html {
 
 .deck__inner {
   border: 1px solid #000;
-  background-image: repeating-linear-gradient(
-    0deg,
-    #000,
-    #000 12.5%,
-    #fff 12.5%,
-    #fff 25%
-  );
+  background-image: repeating-linear-gradient(0deg, #000, #000 12.5%, #fff 12.5%, #fff 25%);
   inline-size: 100%;
   block-size: 100%;
   mix-blend-mode: difference;

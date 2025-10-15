@@ -5,11 +5,9 @@
   setTheme(savedTheme);
 })();
 
-
 document.addEventListener('DOMContentLoaded', () => {
   const themeButtons = document.querySelectorAll('.theme-button');
-  localStorage.getItem('theme') &&
-    setDisabledButton(themeButtons, localStorage.getItem('theme'));
+  localStorage.getItem('theme') && setDisabledButton(themeButtons, localStorage.getItem('theme'));
   themeButtons.forEach((button) => {
     button.addEventListener('click', () => {
       const buttonTheme = [...button.classList]

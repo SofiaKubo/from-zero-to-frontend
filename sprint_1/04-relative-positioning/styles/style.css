@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   src: url(https://code.s3.yandex.net/web-code/fonts/PlayfairDisplay-Bold.woff);
   font-weight: 700;
   font-style: bold;
@@ -50,7 +50,7 @@
 разделов и подразделов — особый шрифт */
 
 .content__title {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 /* свойства заголовка всей страницы */

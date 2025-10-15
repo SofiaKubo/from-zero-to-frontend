@@ -12,14 +12,14 @@
     </div>
     <script>
       const director = {
-        name: "Валерий",
-        surname: "Коломиец",
-        patronymic: "Петрович",
+        name: 'Валерий',
+        surname: 'Коломиец',
+        patronymic: 'Петрович',
       };
 
       const address = {
-        city: "Москва",
-        street: "Пушкинская",
+        city: 'Москва',
+        street: 'Пушкинская',
         home: 5,
       };
 
@@ -27,9 +27,7 @@
 
       function fio(person) {
         const shortFio = `${person.surname} ${person.name}`;
-        return person.patronymic
-          ? `${shortFio} ${person.patronymic}`
-          : shortFio;
+        return person.patronymic ? `${shortFio} ${person.patronymic}` : shortFio;
       }
 
       function addressToString(address) {

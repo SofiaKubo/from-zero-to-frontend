@@ -1,0 +1,28 @@
+{
+  "name": "coding_practice_front",
+  "version": "1.0.0",
+  "description": "👩‍💻 Personal repository with tasks and projects from the Yandex Practicum Frontend Developer course.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SofiaKubo/from-zero-to-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SofiaKubo/from-zero-to-frontend/issues"
+  },
+  "homepage": "https://github.com/SofiaKubo/from-zero-to-frontend#readme",
+  "devDependencies": {
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2"
+  }
+}

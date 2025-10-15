@@ -1,6 +1,6 @@
 /* Шрифты, их размеры, начертания, стиль и отступы */
 :root {
-  --main-font: "PT Sans";
+  --main-font: 'PT Sans';
   --main-text-size: 18px;
   --h1-size: 45px;
   --h2-size: 38px;

@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   margin: 0;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   text-size-adjust: 100%;
   background-color: #0d0615;
@@ -136,7 +136,7 @@ body {
 }
 
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -154,8 +154,12 @@ body {
   font-size: 100px;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 0 0 10px #d6ffff, 0 0 20px #47f1ff, 0 0 40px #6664ff,
-    0 0 80px #151035, 0 0 160px #000;
+  text-shadow:
+    0 0 10px #d6ffff,
+    0 0 20px #47f1ff,
+    0 0 40px #6664ff,
+    0 0 80px #151035,
+    0 0 160px #000;
 }
 
 .section {
@@ -201,7 +205,10 @@ body {
   content: counter(place);
   font-weight: 800;
   font-size: 336px;
-  text-shadow: 4px 4px 0 #00e6e6, 8px 8px 0 #01cccc, 12px 12px 0 #00bdbd,
+  text-shadow:
+    4px 4px 0 #00e6e6,
+    8px 8px 0 #01cccc,
+    12px 12px 0 #00bdbd,
     16px 16px 0 #00a9a9;
 }
 
@@ -317,7 +324,10 @@ body {
 
 .stay__card {
   padding-bottom: 75%;
-  box-shadow: 0 0 0 4px #00e6e6, 0 0 0 8px #0d0615, 0 0 0 12px #01cccc;
+  box-shadow:
+    0 0 0 4px #00e6e6,
+    0 0 0 8px #0d0615,
+    0 0 0 12px #01cccc;
 }
 
 .footer {

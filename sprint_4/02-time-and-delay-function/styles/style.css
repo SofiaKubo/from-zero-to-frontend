@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   text-size-adjust: 100%;
   background-color: #ffc802;
@@ -19,7 +19,7 @@ body {
 }
 
 .members::before {
-  content: "← Наведи курсор →";
+  content: '← Наведи курсор →';
   position: absolute;
   font-size: 30px;
   transform: translate(-50%, -50%);
@@ -33,7 +33,7 @@ body {
 }
 
 .members__member::before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: 1;
   box-sizing: border-box;

@@ -12,12 +12,7 @@
     </div>
     <script>
       function proccessInput(input) {
-        const options = [
-          "A. Вывести список",
-          "B. Добавить",
-          "C. Изменить",
-          "D. Удалить",
-        ];
+        const options = ['A. Вывести список', 'B. Добавить', 'C. Изменить', 'D. Удалить'];
 
         if (!input) {
           return undefined; /* Укажите нужное значение */
@@ -34,14 +29,14 @@
 
       const option = proccessInput();
 
-      console.log(`Операция: ${option ?? "Не найдена"}`);
+      console.log(`Операция: ${option ?? 'Не найдена'}`);
 
       if (option === undefined) {
-        console.log("Вы ничего не ввели");
+        console.log('Вы ничего не ввели');
       }
 
       if (option === null) {
-        console.log("Вы ввели операцию, которая не существует");
+        console.log('Вы ввели операцию, которая не существует');
       }
     </script>
   </body>

@@ -82,7 +82,7 @@ blockquote {
 .cover__title {
   width: 100%;
   color: #fff;
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 400;
   font-size: 72px;
   line-height: 1;
@@ -140,7 +140,7 @@ blockquote {
 
 .content-section__subtitle {
   margin-bottom: 32px;
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.15;
@@ -204,7 +204,7 @@ blockquote {
 
 .card__title {
   margin: 8px auto;
-  font-family: "EB Garamond", serif;
+  font-family: 'EB Garamond', serif;
   font-weight: 500;
   font-size: 22px;
   line-height: 1.35;

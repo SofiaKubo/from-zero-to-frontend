@@ -13,20 +13,20 @@
     <script>
       function tomorrow(day) {
         switch (day) {
-          case "Понедельник":
-            return "Вторник";
-          case "Вторник":
-            return "Среда";
-          case "Среда":
-            return "Четверг";
-          case "Четверг":
-            return "Пятница";
-          case "Пятница":
-            return "Суббота";
-          case "Суббота":
-            return "Воскресенье";
-          case "Воскресенье":
-            return "Понедельник";
+          case 'Понедельник':
+            return 'Вторник';
+          case 'Вторник':
+            return 'Среда';
+          case 'Среда':
+            return 'Четверг';
+          case 'Четверг':
+            return 'Пятница';
+          case 'Пятница':
+            return 'Суббота';
+          case 'Суббота':
+            return 'Воскресенье';
+          case 'Воскресенье':
+            return 'Понедельник';
           default:
             return undefined;
         }
@@ -38,7 +38,7 @@
         return tomorrow(next);
       }
 
-      console.log(dayAfterTomorrow("Среда"));
+      console.log(dayAfterTomorrow('Среда'));
     </script>
   </body>
 </html>

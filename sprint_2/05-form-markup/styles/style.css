@@ -8,8 +8,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -ms-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern";
+  -ms-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern';
 }
 
 /*
@@ -24,7 +24,7 @@
   width: 320px;
   height: 100vh;
   border-right: 1px solid #000;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   background: rgba(255, 255, 255, 0.95);
   transition: left 0.5s;
 }
@@ -269,7 +269,7 @@
   width: 90%;
   margin: 0 auto;
   padding-top: 60px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .content__heading {

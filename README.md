@@ -9,6 +9,7 @@ This course is designed for complete beginners. It covers the fundamentals of HT
 ## 📚 What's inside
 
 This repository includes:
+
 - 🧱 HTML and CSS practice (semantic markup, fonts, flexbox, grids, positioning)
 - 🎨 Mini layout projects
 - ⚙️ JavaScript basics and logic tasks

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -83,7 +83,7 @@ body {
 
 .content__button::before,
 .content__button::after {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   background-color: #fff;
@@ -122,12 +122,10 @@ body {
   }
 }
 
-.content:has(.content__button:is(:hover, :focus-visible))
-  :is(.scene__image_type_first-plan) {
+.content:has(.content__button:is(:hover, :focus-visible)) :is(.scene__image_type_first-plan) {
   transform: scale(1.05);
 }
 
-.content:has(.content__button:is(:hover, :focus-visible))
-  :is(.scene__image_type_second-plan) {
+.content:has(.content__button:is(:hover, :focus-visible)) :is(.scene__image_type_second-plan) {
   transform: scale(0.95);
 }
