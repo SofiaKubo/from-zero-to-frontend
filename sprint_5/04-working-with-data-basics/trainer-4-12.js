@@ -22,9 +22,20 @@ function groupByShipment(products) {
   return groups;
 }
 
+let reducedGroups = products.reduce((groups, product) => {
+  if (!groups[product.shipment]) {
+    groups[product.shipment] = { list: [], count: 0 };
+  }
+  groups[product.shipment].list.push(product);
+  groups[product.shipment].count++;
+  return groups;
+}, {});
+
 let products = getShipmentProducts();
 
 let groups = groupByShipment(products);
 
 console.log(groups);
+console.log(reducedGroups);
 console.log(JSON.stringify(groups, null, 2));
+console.log(JSON.stringify(reducedGroups, null, 2));
