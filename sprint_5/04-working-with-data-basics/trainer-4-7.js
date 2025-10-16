@@ -25,5 +25,5 @@ function addSumRow(data) {
 
 let data = getExcelData();
 addSumRow(data);
-
+data.splice(data.length - 1, 0, ['-', '-', '-', '-']);
 console.log(data);
