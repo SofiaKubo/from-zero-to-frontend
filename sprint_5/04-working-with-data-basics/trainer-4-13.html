@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 6.1 Группировка</title>
+  </head>
+
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const burger = [
+        { _id: '1', name: 'Краторная булка N-200i', price: 1255 },
+        { _id: '5', name: 'Мясо бессмертных моллюсков Protostomia', price: 1337 },
+        { _id: '2', name: 'Говяжий метеорит (отбивная)', price: 3000 },
+        { _id: '3', name: 'Биокотлета из марсианской Магнолии', price: 424 },
+        { _id: '4', name: 'Соус Spicy-X', price: 90 },
+        { _id: '5', name: 'Мясо бессмертных моллюсков Protostomia', price: 1337 },
+        { _id: '2', name: 'Говяжий метеорит (отбивная)', price: 3000 },
+        { _id: '6', name: 'Соус традиционный галактический', price: 15 },
+        { _id: '2', name: 'Говяжий метеорит (отбивная)', price: 3000 },
+        { _id: '1', name: 'Краторная булка N-200i', price: 1255 },
+      ];
+
+      const statistics = burger.reduce((acc, item) => {
+        if (!acc[item._id]) {
+          acc[item._id] = 0;
+        }
+        acc[item._id]++;
+        return acc;
+      }, {});
+
+      const totalPrice = burger.reduce((sum, item) => sum + item.price, 0);
+
+      console.log('Статистика:', statistics);
+      console.log(`Общая стоимость: ${totalPrice}`);
+    </script>
+  </body>
+</html>

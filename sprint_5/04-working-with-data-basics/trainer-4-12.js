@@ -22,6 +22,8 @@ function groupByShipment(products) {
   return groups;
 }
 
+let products = getShipmentProducts();
+
 let reducedGroups = products.reduce((groups, product) => {
   if (!groups[product.shipment]) {
     groups[product.shipment] = { list: [], count: 0 };
@@ -30,8 +32,6 @@ let reducedGroups = products.reduce((groups, product) => {
   groups[product.shipment].count++;
   return groups;
 }, {});
-
-let products = getShipmentProducts();
 
 let groups = groupByShipment(products);
 
