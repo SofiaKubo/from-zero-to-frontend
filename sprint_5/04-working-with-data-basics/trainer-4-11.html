@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 5.3 Трансформация</title>
+  </head>
+
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const ingredients = [
+        'Краторная булка N-200i',
+        'Говяжий метеорит (отбивная)',
+        'Биокотлета из марсианской Магнолии',
+        'Соус Spicy-X',
+        'Мясо бессмертных моллюсков Protostomia',
+        'Соус традиционный галактический',
+        'Соус фирменный Space Sauce',
+        'Плоды Фалленианского дерева',
+        'Хрустящие минеральные кольца',
+        'Соус с шипами Антарианского плоскоходца',
+        'Кристаллы марсианских альфа-сахаридов',
+        'Мини-салат Экзо-Плантаго',
+        'Филе Люминесцентного тетраодонтимформа',
+        'Сыр с астероидной плесенью',
+        'Флюоресцентная булка R2-D3',
+      ];
+
+      const fromIndex = 4;
+      const toIndex = 8;
+
+      const updated =
+        /* Здесь должен быть ваш код */
+        ingredients.toSpliced(fromIndex, 1).toSpliced(toIndex, 0, ingredients[fromIndex]);
+
+      console.log(updated);
+    </script>
+  </body>
+</html>
