@@ -26,8 +26,6 @@ function addSumRow(data) {
 let data = getExcelData();
 addSumRow(data);
 
-console.log(data);
-
 let percentData = data
   .map((row) => {
     let yearSum = 0;
