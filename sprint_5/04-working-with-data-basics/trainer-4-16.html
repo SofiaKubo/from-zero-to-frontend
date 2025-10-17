@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 4.1 Синтаксические ошибки</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      const arr = [1, 2, 3, 4, 5, 6];
+
+      const isOdd = (x) => x % 2 !== 0;
+
+      const odds = arr.filter(isOdd);
+
+      const isEven = (x) => x % 2 === 0;
+
+      const evens = arr.filter(isEven);
+
+      console.log('Нечётные', odds);
+      console.log('Чётные', evens);
+    </script>
+  </body>
+</html>
