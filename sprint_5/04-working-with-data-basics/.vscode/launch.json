@@ -1,0 +1,14 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Open trainer-4-17.html",
+      "file": "c:\\Users\\Sofia\\Coding_practice_front\\sprint_5\\04-working-with-data-basics\\trainer-4-17.html"
+    }
+  ]
+}
