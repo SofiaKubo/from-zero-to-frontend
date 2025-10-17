@@ -1,0 +1,23 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр 2.1 Работа с документацией</title>
+  </head>
+  <body>
+    <div style="width: 100%; height: 100vh">
+      <div style="margin: 0 auto; width: fit-content">
+        Откройте консоль, чтобы увидеть результат выполнения приложения.
+      </div>
+    </div>
+    <script>
+      // const res = [0, 1, 2, 3, 4].reduceRight(function (previousValue, currentValue) {
+      //   return [currentValue, ...previousValue];
+      // });
+
+      const res = [0, 1, 2, 3, 4].reduceRight((acc, curr) => [...acc, curr], []);
+
+      console.log(res);
+    </script>
+  </body>
+</html>
