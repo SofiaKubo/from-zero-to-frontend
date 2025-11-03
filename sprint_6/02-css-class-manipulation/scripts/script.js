@@ -1,2 +1,4 @@
-const lastNode = document.querySelector('.list li:last-child');
-lastNode.classList.add('marked');
+const nodes = document.querySelectorAll('.list li');
+nodes.forEach((node) => {
+  node.classList.toggle('marked');
+});
