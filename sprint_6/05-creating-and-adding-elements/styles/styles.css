@@ -1,62 +1,68 @@
 .main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 0;
+  box-sizing: border-box;
+  background-color: #fafafa;
 }
 
-.header {
-    align-self: center;
-}
-
-.content {
-    align-self: center;
+.header h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .list {
-    padding: 0;
-    margin: 0;
-    align-self: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  width: min(1000px, 90%);
 }
 
-.marked {
-    background-color: chartreuse;
-}
-
-.totalPrice {
-    font-weight: bold;
-    font-size: 1.1em;
-    align-self: center;
-}
-
-.products {
-    text-wrap: wrap;
-    align-self: center;
+.list__item {
+  margin: 0;
+  padding: 0;
 }
 
 .card {
-    width: fit-content;
-    border-radius: 10px;
-    border-color: chocolate;
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
+  background-color: white;
+  border: 2px solid chocolate;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .title {
-    margin: 0;
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .field {
-    font-weight: bold;
-    font-style: italic;
+  font-weight: 600;
+  font-style: italic;
+  color: #333;
 }
 
 p {
-    margin: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
 }
