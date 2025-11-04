@@ -1,10 +1,3 @@
-document.createNode = document.createElement;
-const user = {
-  name: 'Хабаров Валентин',
-  age: 35,
-  email: 'habar@yandex.ru',
-};
-
 function createTitle(name) {
   const h2 = document.createElement('h2');
   h2.classList.add('title');
@@ -40,9 +33,11 @@ function createCard(user) {
 const container = document.createElement('ul');
 container.classList.add('list');
 
-users.forEach((user) => {
-  const card = createCard(user);
-  container.append(card);
+users.forEach((u) => {
+  const li = document.createElement('li');
+  li.classList.add('list__item');
+  li.append(createCard(u));
+  container.append(li);
 });
 
 document.querySelector('.main').append(container);
