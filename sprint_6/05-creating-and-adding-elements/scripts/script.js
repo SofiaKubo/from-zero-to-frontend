@@ -37,4 +37,12 @@ function createCard(user) {
   return card;
 }
 
-document.querySelector('.main').append(createCard(user));
+const container = document.createElement('ul');
+container.classList.add('list');
+
+users.forEach((user) => {
+  const card = createCard(user);
+  container.append(card);
+});
+
+document.querySelector('.main').append(container);
