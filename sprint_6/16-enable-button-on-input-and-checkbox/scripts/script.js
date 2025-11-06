@@ -8,7 +8,11 @@ const values = {
 };
 
 const onChange = (e) => {
-  buttonElement.disabled = nameElement.value && agreementElement.checked ? false : true;
+  values[e.target.name] = e.target.type === 'checkbox' ? e.target.checked : e.target.value.trim();
+
+  const isValid = values.name && values.agreement;
+
+  buttonElement.disabled = !isValid;
 };
 
 nameElement.addEventListener('input', onChange);
