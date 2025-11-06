@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Тренажёр 4.2 А что там в реальности?</title>
+    <link href="./styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form class="container" name="addressForm">
+      <fieldset class="address-container">
+        <label class="field">
+          <span>Адрес:</span>
+          <input type="text" name="addresses[]" />
+        </label>
+        <div id="controls">
+          <button type="button" name="add">+</button>
+          <button type="button" name="remove" disabled>-</button>
+        </div>
+      </fieldset>
+      <label>
+        <span>Телефон:</span>
+        <input type="text" name="phone" />
+      </label>
+      <button type="submit">Сохранить</button>
+    </form>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
