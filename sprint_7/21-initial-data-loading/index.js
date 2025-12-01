@@ -15,18 +15,30 @@ async function initializeDashboard() {
     // Загрузить все данные параллельно с помощью Promise.allSettled()
     const results = await Promise.allSettled([fetchUsers(), fetchTasks(), fetchNews()]);
     // Вызвать соответствующие рендер-функции для полученных данных (лежат в res.value.data)
-    if (results[0].status === 'rejected') {
-      throw new Error('Ошибка при загрузке пользователей');
+
+    // --- USERS ---
+    if (results[0].status === 'fulfilled') {
+      renderUsers(results[0].value);
+    } else {
+      console.error(results[0].reason);
+      showError('Не удалось загрузить пользователей');
     }
-    if (results[1].status === 'rejected') {
-      throw new Error('Ошибка при загрузке задач');
+
+    // --- TASKS ---
+    if (results[1].status === 'fulfilled') {
+      renderTasks(results[1].value);
+    } else {
+      console.error(results[1].reason);
+      showError('Не удалось загрузить задачи');
     }
-    if (results[2].status === 'rejected') {
-      throw new Error('Ошибка при загрузке новостей');
+
+    // --- NEWS ---
+    if (results[2].status === 'fulfilled') {
+      renderNews(results[2].value);
+    } else {
+      console.error(results[2].reason);
+      showError('Не удалось загрузить новости');
     }
-    renderUsers(results[0].value.data);
-    renderTasks(results[1].value.data);
-    renderNews(results[2].value.data);
     console.log('Дашборд инициализирован успешно');
   } catch (err) {
     // Показать ошибку пользователю
