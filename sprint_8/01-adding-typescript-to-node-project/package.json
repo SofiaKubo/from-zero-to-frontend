@@ -1,0 +1,17 @@
+{
+  "name": "dogs-in-my-street",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "16.11.42",
+    "ts-node": "10.8.1",
+    "typescript": "4.7.4"
+  },
+  "keywords": []
+}
