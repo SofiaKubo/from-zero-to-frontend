@@ -9,3 +9,15 @@ const obj: {firstValue: string, secondValue: number, thirdValue: boolean} = {
   secondValue: 123,
   thirdValue: false,
 };
+
+
+const obj1: {firstValue: string | number, secondValue?: number, thirdValue: boolean | string} = {
+  firstValue: "myString",
+  secondValue: 123,
+  thirdValue: false,
+};
+
+const obj2: any = {
+  firstValue: 123,
+  thirdValue: "myString",
+};
