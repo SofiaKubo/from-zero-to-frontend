@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/index",
+    "build": "tsc",
+    "lint": "eslint src",
+    "generate:lock": "npm i --package-lock-only"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/isomorphic-fetch": "^0.0.36",
+    "@types/node": "16.11.42",
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
+    "eslint": "8.19.0",
+    "ts-node": "10.8.1",
+    "typescript": "4.7.4"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
