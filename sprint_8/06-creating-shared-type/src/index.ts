@@ -39,3 +39,33 @@ const Wader: Skywalker = {
 	father: null,
 	isDark: true
 }
+
+
+
+type Jedi = {
+  type: "jedi";
+  name: string;
+  father: string;
+};
+
+type Sith = {
+  type: "sith";
+  name: string;
+  father: null;
+  isDark: boolean;
+};
+
+type ForceUser = Jedi | Sith;
+
+const Yoda: ForceUser = {
+  type: "jedi",
+  name: "Yoda",
+  father: "N'Kata Del Gormo"
+}
+
+const Sidious: ForceUser = {
+  type: "sith",
+  name: "Sidious",
+  father: null,
+  isDark: true
+}
