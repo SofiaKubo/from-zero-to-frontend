@@ -1,3 +1,13 @@
+type User = {
+  name: string;
+  age?: number;
+  contacts?: Contacts;
+}
+
+type Contacts = {
+  phone: string;
+}
+
 const firstUser: User = {
 	name: "alex",
 	age: 34
@@ -10,12 +20,22 @@ const secondUser: User = {
 	}
 }
 
-type User = {
+type Skywalker = {
+  type: "jedi" | "sith";
   name: string;
-  age?: number;
-  contacts?: Contact;
+  father: string | null;
+  isDark?: boolean;
 }
 
-type Contact = {
-  phone: string;
+const Luke: Skywalker = {
+	type: "jedi",
+	name: "Luke",
+	father: "Anakin"
+}
+
+const Wader: Skywalker = {
+	type: "sith",
+	name: "Wader",
+	father: null,
+	isDark: true
 }
