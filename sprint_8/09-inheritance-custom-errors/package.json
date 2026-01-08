@@ -1,0 +1,17 @@
+{
+  "name": "Ошибка",
+  "version": "1.0.0",
+  "description": "наследуем всё",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ts-node": "10.8.1",
+    "typescript": "4.7.4"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
