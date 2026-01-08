@@ -10,10 +10,10 @@ class BaseError {
     }
 }
 
-/** todo: Напишите класс CalculationError на основе BaseError */
-
 class CalculationError extends BaseError {
-
+  constructor(code: string) {
+    super(code);
+}
 }
 
 const rangeError = new CalculationError('INVALID_RANGE');
