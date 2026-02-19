@@ -1,14 +1,13 @@
-import { useState } from "react";
-import "./styles.css";
-import { TTemperature, TemperatureScale } from "../../types";
+import './styles.css';
+import { TemperatureScale } from '../../types';
 
 type TTemperatureInputProps = {
   scale: TemperatureScale;
+  value: string;
+  onChange: (temperature: string) => void;
 };
 
-export const TemperatureInput = ({ scale }: TTemperatureInputProps) => {
-  const [value, setValue] = useState<TTemperature>({ scale, temperature: "" });
-
+export const TemperatureInput = ({ scale, value, onChange }: TTemperatureInputProps) => {
   return (
     <fieldset className="card">
       <label className="label">
@@ -18,8 +17,8 @@ export const TemperatureInput = ({ scale }: TTemperatureInputProps) => {
           name="name"
           type="text"
           inputMode="numeric"
-          value={value.temperature}
-          onChange={(e) => setValue({ scale, temperature: e.target.value })}
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
         />
       </label>
     </fieldset>
