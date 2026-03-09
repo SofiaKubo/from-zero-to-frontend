@@ -1,12 +1,10 @@
-import { createContext } from 'react';
-import { TrackModel } from '../../src/models/Track';
-
-export interface CurrentPlayingTrackContextValue {
+import React from 'react';
+import { TrackModel } from '../models/Track';
+type CurrentPlayingTrackContextValue = {
   currentPlayingTrack: TrackModel | null;
   setCurrentPlayingTrack: (track: TrackModel) => void;
-}
-
-export const CurrentPlayingTrackContext = createContext<CurrentPlayingTrackContextValue>({
+};
+export const CurrentPlayingTrackContext = React.createContext<CurrentPlayingTrackContextValue>({
   currentPlayingTrack: null,
   setCurrentPlayingTrack: () => {},
 });
