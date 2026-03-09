@@ -1,0 +1,34 @@
+.height {
+	height: 50px;
+}
+
+.width-big {
+	width: 250px;
+}
+
+.width-small {
+	width: 50px;
+}
+
+.background-red {
+	background: red;
+}
+
+.background-blue {
+	background: blue;
+}
+
+.form {
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.form-element {
+	margin-bottom: 10px;
+}
+
+.label-input {
+	margin-right: 10px;
+}
