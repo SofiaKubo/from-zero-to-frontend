@@ -1,0 +1,12 @@
+.player-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-controls {
+    margin-bottom: 10px;
+}
+
+.play-button {
+    margin-right: 10px;
+}
