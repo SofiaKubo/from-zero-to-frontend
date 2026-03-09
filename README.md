@@ -16,4 +16,4 @@ This repository includes:
 - 🧪 DOM manipulation and event handling
 - 📦 API integration and form handling
 - 🧰 Git and GitHub version control practice
-- 📁 Final sprint projects
+
