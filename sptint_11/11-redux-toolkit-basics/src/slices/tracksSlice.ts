@@ -10,7 +10,7 @@ const initialState: TrackListState = {
   tracks,
 };
 
-const trackSlice = createSlice({
+const tracksSlice = createSlice({
   name: 'tracks',
   initialState,
   reducers: {},
@@ -19,5 +19,5 @@ const trackSlice = createSlice({
   },
 });
 
-export const { getTracks } = trackSlice.selectors;
-export const tracksReducer = trackSlice.reducer;
+export const { getTracks } = tracksSlice.selectors;
+export const tracksReducer = tracksSlice.reducer;
