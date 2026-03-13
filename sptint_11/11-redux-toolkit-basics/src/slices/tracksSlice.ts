@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { tracks } from '../data/tracks';
 import { TrackModel } from '../models/Track';
+import { tracks } from '../data/tracks';
 
 interface TrackListState {
   tracks: TrackModel[];
@@ -15,9 +15,12 @@ const tracksSlice = createSlice({
   initialState,
   reducers: {},
   selectors: {
-    getTracks: (state) => state.tracks,
+    selectTracks: (sliceState) => {
+      return sliceState.tracks;
+    },
   },
 });
 
-export const { getTracks } = tracksSlice.selectors;
-export const tracksReducer = tracksSlice.reducer;
+export const { selectTracks } = tracksSlice.selectors;
+
+export default tracksSlice.reducer;

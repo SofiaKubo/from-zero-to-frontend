@@ -1,6 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { tracksReducer } from '../slices/tracksSlice';
+import tracksSliceReducer from '../slices/tracksSlice';
 
 export const store = configureStore({
-  reducer: { tracks: tracksReducer },
+  reducer: {
+    tracks: tracksSliceReducer,
+  },
 });
+
+export type RootState = ReturnType<typeof store.getState>;
